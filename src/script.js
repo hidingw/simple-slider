@@ -20,11 +20,11 @@ var autoTimer = setInterval(function() {
 	getImage();
 }, 3500);
 
-myImage.mouseover = function() {
+myImage.onmouseover = function() {
 	clearInterval(autoTimer);
 };
 
-myImage.mouseout = function() {
+myImage.onmouseout = function() {
 	autoTimer = setInterval(function() {
 	(i < images.length-1) ? i++ : i=0;
 	getImage();
